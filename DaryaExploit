@@ -1,0 +1,271 @@
+local blacklistedUser = "MrDooo0om"
+local player = game.Players.LocalPlayer
+
+-- Function to check if the player is blacklisted
+local function isBlacklisted(playerName)
+    return playerName == blacklistedUser
+end
+
+-- Create the main GUI
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = player.PlayerGui
+
+-- Check if the player is blacklisted
+if isBlacklisted(player.Name) then
+    -- Disable the original GUI
+    ScreenGui1.Enabled = false
+    
+    -- Create a new GUI for blacklisted players
+    local BlacklistGui = Instance.new("ScreenGui")
+    BlacklistGui.Parent = player.PlayerGui
+
+    -- Create a frame for the message
+    local Frame = Instance.new("Frame")
+    Frame.Parent = BlacklistGui
+    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+    Frame.Size = UDim2.new(0.3, 0, 0.2, 0)
+    Frame.Position = UDim2.new(0.35, 0, 0.4, 0)
+    
+    -- Create a TextLabel to show the message
+    local TextLabel = Instance.new("TextLabel")
+    TextLabel.Parent = Frame
+    TextLabel.Size = UDim2.new(1, 0, 1, 0)
+    TextLabel.Text = "To band krawi"
+    TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+    TextLabel.TextScaled = true
+    TextLabel.BackgroundTransparency = 1
+    TextLabel.TextAlignment = Enum.TextAlignment.Center
+    TextLabel.TextWrapped = true
+
+    -- Disable all interactions
+    return -- Exit the script so no further code runs
+end
+
+
+local ScreenGui1 = Instance.new("ScreenGui") 
+ScreenGui1.Parent = game.Players.LocalPlayer.PlayerGui
+
+local Frame1 = Instance.new("Frame") 
+Frame1.Parent = ScreenGui1
+Frame1.BackgroundColor3 = Color3.fromRGB(0,32,96)
+Frame1.BorderSizePixel = 3
+Frame1.BorderColor3 = Color3.fromRGB(33,84,185)
+Frame1.Size = UDim2.new(0.4,0,0.4)
+Frame1.Visible = true
+Frame1.Active = true
+Frame1.Draggable = true
+Frame1.Size = UDim2.new(0.5,0,0.7)
+
+
+
+local ScrollingFrame1 = Instance.new("ScrollingFrame") 
+ScrollingFrame1.Parent = Frame1
+ScrollingFrame1.BackgroundColor3 = Color3.fromRGB(242,243,243)
+ScrollingFrame1.BackgroundTransparency = 0.1
+ScrollingFrame1.BorderSizePixel = 1
+ScrollingFrame1.BorderColor3 = Color3.fromRGB(17,17,17)
+ScrollingFrame1.Size = UDim2.new(0.1,0,0.1)
+ScrollingFrame1.Size = UDim2.new(0.1,0,0.3)
+ScrollingFrame1.ScrollBarThickness = 2
+ScrollingFrame1.Visible = true
+ScrollingFrame1.Active = true
+ScrollingFrame1.Draggable = true
+ScrollingFrame1.ScrollBarThickness = 0.1
+
+local TextButton1 = Instance.new("TextButton") 
+TextButton1.Parent = Frame1
+TextButton1.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(33,84,185)
+TextButton1.Position = UDim2.new(-1,3,-1)
+TextButton1.Position = UDim2.new(0,0,0)
+TextButton1.Position = UDim2.new(0,0,1)
+TextButton1.Position = UDim2.new(0.12,0,0.14)
+TextButton1.Position = UDim2.new(0.3,0,0.4)
+TextButton1.Position = UDim2.new(0.2,0,0.2)
+TextButton1.BorderSizePixel = 1
+TextButton1.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton1.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton1.TextScaled = true
+TextButton1.TextWrapped = true
+TextButton1.Active = true
+TextButton1.Visible = true
+TextButton1.Size = UDim2.new(0.1,0,0.1)
+TextButton1.Position = UDim2.new(0.2,0,0.12)
+ScrollingFrame1.BorderSizePixel = 0.1
+
+ScrollingFrame1.Size = UDim2.new(0.05,0,0.1)
+
+ScrollingFrame1.Size = UDim2.new(0.02,0,0.2)
+TextButton1.Position = UDim2.new(0.1,0,0.15)
+
+TextButton1.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
+TextButton1.Text = "GHOST HUB"
+
+local TextButton2 = Instance.new("TextButton") 
+TextButton2.Parent = Frame1
+TextButton2.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton2.BorderSizePixel = 1
+TextButton2.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton2.Size = UDim2.new(0.1,0,0.1)
+TextButton2.Position = UDim2.new(30,0,0.12)
+TextButton2.Position = UDim2.new(0.4,0,0.12)
+TextButton2.Position = UDim2.new(0.2,0,0.30)
+TextButton2.Position = UDim2.new(0.12,0,0.15)
+TextButton2.Position = UDim2.new(0.12,0,0.30)
+TextButton2.Position = UDim2.new(0.2,0,0.15)
+TextButton2.Position = UDim2.new(0.3,0,0.15)
+TextButton2.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton2.Text = "INF YIELD"
+TextButton2.Active = true
+TextButton2.Visible = true
+
+TextButton2.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+
+
+local TextButton3 = Instance.new("TextButton") 
+TextButton3.Parent = Frame1
+TextButton3.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton3.BorderSizePixel = 1
+TextButton3.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton3.Position = UDim2.new(0.5,0,0.12)
+TextButton3.Size = UDim2.new(0.1,0,0.1)
+TextButton3.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton3.Text = "NAMELESS ADMINI"
+TextButton3.Position = UDim2.new(0.5,0,0.15)
+TextButton3.TextSize = 10
+TextButton3.TextScaled = true
+TextButton2.TextScaled = true
+TextButton3.Text = "NAMELESS ADMIN"
+
+TextButton3.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+end)
+
+local TextButton4 = Instance.new("TextButton") 
+TextButton4.Parent = Frame1
+TextButton4.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton4.BorderSizePixel = 1
+TextButton4.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton4.Position = UDim2.new(0.7,0,0.15)
+TextButton4.Size = UDim2.new(0.1,0,0.1)
+TextButton4.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton4.Text = "INVISIBLE "
+TextButton4.TextScaled = true
+TextButton4.TextWrapped = true
+TextButton4.Visible = true
+TextButton4.Active = true
+TextButton4.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+end)
+local TextLabel1 = Instance.new("TextLabel") 
+
+TextLabel1.Parent = Frame1
+TextLabel1.TextColor3 = Color3.fromRGB(242,243,243)
+TextLabel1.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextLabel1.BorderSizePixel = 1
+TextLabel1.BorderColor3 = Color3.fromRGB(33,84,185)
+TextLabel1.Size = UDim2.new(1,0,0.1)
+
+TextLabel1.Text = "\___ KOZHA & ARA___/"
+
+local TextButton5 = Instance.new("TextButton") 
+
+TextButton5.Parent = Frame1
+TextButton5.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton5.BorderSizePixel = 1
+TextButton5.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton5.Position = UDim2.new(0.88,0,0.15)
+TextButton5.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton5.Text = "ILLUSION"
+TextButton5.TextScaled = true
+TextButton5.TextWrapped = true
+TextButton5.Visible = true
+TextButton5.Active = true
+TextButton5.Size = UDim2.new(0.1,0,0.1) 
+TextButton5.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Illusion-Script-12744"))()
+end)
+
+
+
+local TextButton6 = Instance.new("TextButton") 
+
+TextButton6.Parent = Frame1
+TextButton6.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton6.BorderSizePixel = 1
+TextButton6.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton6.Position = UDim2.new(0.1,0,0.30)
+TextButton6.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton6.Text = "PROTON ADMIN"
+TextButton6.TextScaled = true
+TextButton6.TextWrapped = true
+TextButton6.Visible = true
+TextButton6.Active = true
+TextButton6.Size = UDim2.new(0.1,0,0.1) 
+TextButton6.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5e6e6cc1bb32fd926764d064e2c60a3b.lua"))()
+end)
+
+
+local TextButton7 = Instance.new("TextButton") 
+
+TextButton7.Parent = Frame1
+TextButton7.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton7.BorderSizePixel = 1
+TextButton7.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton7.Position = UDim2.new(0.3,0,0.30)
+TextButton7.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton7.Text = "INVISIBLE2"
+TextButton7.TextScaled = true
+TextButton7.TextWrapped = true
+TextButton7.Visible = true
+TextButton7.Active = true
+TextButton7.Size = UDim2.new(0.1,0,0.1) 
+TextButton7.MouseButton1Click:Connect(function() 
+loadstring(game:HttpGet("https://gist.githubusercontent.com/skid123skidlol/cd0d2dce51b3f20ad1aac941da06a1a1/raw/f58b98cce7d51e53ade94e7bb460e4f24fb7e0ff/%257BFE%257D%2520Invisible%2520Tool%2520(can%2520hold%2520tools)",true))()
+end)
+
+local TextButton8 = Instance.new("TextButton") 
+TextButton8.Parent = Frame1
+TextButton8.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton8.BorderSizePixel = 1
+TextButton8.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton8.Position = UDim2.new(0.5,0,0.30)
+TextButton8.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton8.Text = "ENERGIZE"
+TextButton8.TextScaled = true
+TextButton8.TextWrapped = true
+TextButton8.Visible = true
+TextButton8.Active = true
+TextButton8.Size = UDim2.new(0.1,0,0.1) 
+TextButton8.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Energize-10408"))()
+end)
+
+
+local TextButton9 = Instance.new("TextButton") 
+TextButton9.Parent = Frame1
+TextButton9.BackgroundColor3 = Color3.fromRGB(0,32,96)
+TextButton9.BorderSizePixel = 1
+TextButton9.BorderColor3 = Color3.fromRGB(17,17,17)
+TextButton9.Position = UDim2.new(0.7,0,0.30)
+TextButton9.TextColor3 = Color3.fromRGB(242,243,243)
+TextButton9.Text = "SPEED"
+TextButton9.TextScaled = true
+TextButton9.TextWrapped = true
+TextButton9.Visible = true
+TextButton9.Active = true
+TextButton9.Size = UDim2.new(0.1,0,0.1) 
+TextButton9.MouseButton1Click:Connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BAAUW3Vk"))()
+end)
+
+
+
+
